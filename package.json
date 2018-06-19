@@ -1,0 +1,41 @@
+{
+  "name": "jobs-api",
+  "version": "1.0.0",
+  "description": "An API for handling with Jobs openings",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec node bin/dev",
+    "test": "yarn test",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && mkdir dist && babel src -s -d dist",
+    "production": "yarn build && node bin/production",
+    "start-production": "node bin/production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heldersnook/jobs-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Helder Robalo <heldersnook@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heldersnook/jobs-api/issues"
+  },
+  "homepage": "https://github.com/heldersnook/jobs-api#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "nodemon": "^1.17.5",
+    "yarn": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
